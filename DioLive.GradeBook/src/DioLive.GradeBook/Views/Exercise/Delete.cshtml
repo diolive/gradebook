@@ -1,0 +1,18 @@
+@model DioLive.GradeBook.Models.Exercise
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete excepcise #@Model.Number. @Model.Title?</h3>
+
+<div>
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>
